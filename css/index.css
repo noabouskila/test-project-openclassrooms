@@ -113,18 +113,30 @@ img.img-mobile{
     #full-screen > div > p{
         font-size: 15px;
     }
-
+    main h2 {
+        font-size: 15px;
+    }
     img.img-desktop, p.p-desktop{
         display: none;
+    }
+    div.div-img{
+        display: flex;
+        justify-content: center;
+    }
+    div.div-img:nth-child(3){
+       width: 100px;
     }
     img.img-mobile{
         display: block;
         padding-top: 3%;
-        padding-bottom: 3%;
-        
+        padding-bottom: 3%;   
     }
     #main-decritption > ul > li > div {
         width: 100%;
+    }
+    #main-description > p{
+        font-size: 15px;
+        width: 95%;
     }
 }
 
