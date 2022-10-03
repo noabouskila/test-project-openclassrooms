@@ -1,0 +1,130 @@
+main h1{
+    font-weight: 500;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 75px;
+}
+main h2{
+    font-size: 30px;
+}
+#full-screen{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: 100%;
+    background: url("../img/apprendreACoder.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: 8%;
+    box-shadow: 0px 0px 10px
+}
+#full-screen > div{
+    background-color: rgb(28 67 81 / 84%);
+    color: white;
+    width: 60%;
+    /* margin-top: 10%; */
+    padding-bottom: 5%;
+    box-shadow: 0px 0px 15px grey;
+}
+#full-screen > div > p{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 2px;
+}
+#main-decritption{
+    padding: 5% 0% 0% 0%;
+    /* width: 90%; */
+}
+#main-decritption > div{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+}
+#main-decritption > ul{
+    padding-left: 0;
+}
+#main-decritption > ul > li{
+    display: flex;
+    padding: 5% 2% 2% 2%;
+}
+#main-decritption > ul > li:nth-child(even){
+    flex-direction: row-reverse;
+}
+#main-decritption > ul > li:nth-child(odd){
+    background-color:#e3eaed;;
+}
+#main-decritption > ul > li > div{
+    /* width: 50%; */
+    margin: 0%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+#main-decritption p{
+    font-size: 20px;
+    width: 75%;
+    margin-top : 5%;
+    margin-bottom: 5%;
+}
+#main-decritption button{
+    font-size: 23px;
+    padding: 4%;
+    /* width: 112%; */
+    border: none;
+    box-shadow: 0 0 10px grey;
+    border-radius: 2%;
+    background-color: white;  
+}
+#main-decritption > ul > li:nth-child(2) button{
+    flex-direction: row-reverse;
+    background-color: rgb(28 67 81 / 84%); 
+    color: white;
+}
+#learnOC{
+    padding: 3%;
+    font-size: 20px;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    margin: 1%;
+}
+img.img-mobile{
+    display: none;
+}
+
+
+@media screen and (max-width : 840px){
+    main h1{
+        font-size: 35px;
+    }
+    #full-screen > div > p{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 415px){
+
+    main h1{
+        font-size: 25px;
+    }
+    #full-screen > div > p{
+        font-size: 15px;
+    }
+
+    img.img-desktop, p.p-desktop{
+        display: none;
+    }
+    img.img-mobile{
+        display: block;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        
+    }
+    #main-decritption > ul > li > div {
+        width: 100%;
+    }
+}
+

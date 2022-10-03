@@ -1,0 +1,112 @@
+*{
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;  
+}
+
+#header > section{
+    background-color :rgb(28 67 81);
+    box-shadow: 1px 1px 10px;
+    padding: 4% 0 3% 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+display: flex;
+align-items: center;
+font-size: 60px;
+color: white;
+text-decoration: none;
+}
+
+nav ul{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li a{
+    font-size: 35px;
+}
+nav a:hover , nav ul li:hover {
+   color: wheat;
+   cursor: pointer;
+   font-size: 55px;
+}
+
+/* hide in desktop */
+#btn-burger , #mobile{
+    display: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width : 840px){
+
+    #header section nav ul#desktop{
+        display: none;
+    }
+    #btn-burger{
+        display: block;
+    }
+    
+    /* menu burger */
+
+    #mobile{
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        right: -100%;
+        background-color: #40616d;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: right 500ms ease-in-out;
+        -moz-transition: right 500ms ease-in-out;
+        -ms-transition: right 500ms ease-in-out;
+        -o-transition: right 500ms ease-in-out;
+        transition: right 500ms ease-in-out;
+        }
+    #mobile.open{
+        right:0;
+    }
+    
+    #btn-burger{
+        width: 5%;
+        height: 19%;
+        position: fixed;
+        top: 0;
+        right: 2%;
+        z-index: 11;
+        background : url("../img/bars-solid.svg") center center no-repeat;
+        background-size:100% auto;
+        
+    }
+    #btn-burger.open{
+    background: url("../img/close-picto.svg") center center no-repeat;
+    background-size:80% auto;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 414px){
+    nav > a{
+        font-size: 15px;
+    }
+    #btn-burger{
+        height: 6%;
+       
+    }
+}

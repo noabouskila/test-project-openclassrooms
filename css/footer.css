@@ -1,0 +1,47 @@
+#footer > section{
+    background-color :rgb(28 67 81); 
+    box-shadow: 1px 1px 10px;
+    color: white;
+}
+
+#footer h3{
+    text-align: center;
+    padding: 1%;
+    font-weight: 400;
+}
+
+#mes-infos{
+    display: flex;
+    border: 1px solid grey ; 
+    width: 95%;
+}
+#mes-infos ul li{
+    font-size: 20px;
+}
+#mes-infos ul li a , #cgv a{
+    color: white;
+    word-break: break-word;
+}
+#mes-infos #image{
+    width: 10%;
+}
+
+#mes-infos #image img{
+    width: 100%;
+}
+
+#cgv{
+    padding: 1%;
+    text-align: center;
+}
+
+@media screen and (max-width : 415px){
+    #mes-infos ul li {
+        font-size: 15px;
+    }
+}
+
+
+
+
+

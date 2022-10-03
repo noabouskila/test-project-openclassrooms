@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <header id="header"></header>
+    <main id="main">
+        <section id="full-screen">
+            <div>
+                <h1>Contactez-moi!</h1>
+                <p><i>Besoin d'informations, de questions sur les langages du Web ?</i></p>
+            </div>
+        </section>
+        <section id="main-decritption-contact">
+            <form action="#"  method="post">
+                <fieldset>
+                    <legend>Informations de contact</legend>
+
+                    <div>
+                        <label for="familyname">Nom</label>
+                        <input type="text" name="familyname" id="familyname">
+                    </div>
+
+                    <div>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="gender">Genre : </label>
+
+                        <input type="radio" name="gender">
+                        <label for="gender">F</label>
+                        <input type="radio" name="gender"> 
+                        <label for="gender">M</label>   
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>L'objet de botre demande</legend>
+                    <div id="what-langage">
+                        <label for="langage">Demande concernant le langage :</label>
+                        <select name="langage" id="langage">
+                            <option value="HTML5" >HTML5</option>
+                            <option value="CSS3" >CSS3</option>
+                            <option value="JS" >Javascript</option>
+                            <option value="other" >autre</option>
+                        </select>
+                    </div>
+
+                   <div>
+                        <textarea name="content" id="content"  rows="10" cols="50">Contenu de votre demande...
+                        </textarea>
+                   </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <input id="submit" type="submit" value="Envoyer">
+                    <p id="response" ></p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+
+
+
+
+    <!-- script -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
